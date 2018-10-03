@@ -1,0 +1,109 @@
+body{
+	background-image: url("images/background.jpg")
+	background-color: black; 
+}
+
+
+.banner{
+	position: absolute;
+	top: 0%; 
+	left: 0%;
+}
+
+.sesion{
+	background-color: black; 
+	width: 100%; 
+	height: 5%; 
+	position: absolute; 
+	top: 20%; 
+	left: 0%;
+}
+
+
+.link_especial{
+	color: #b8c6dd;
+}
+
+.images_container {
+	position: absolute; 
+	top: 25%; 
+	left: 0%; 
+	width: 100%;
+}
+
+.images_menu {
+	position: absolute; 
+	top: 118%;
+	left: 0%;
+	width: 100%; 
+	height: 30%;
+}
+
+.images_menu img{
+	border-radius: 90%; height: 100%; width: 18%;
+	border: 5px solid #cecee0;
+}
+
+.pie_pagina{
+	position: absolute;
+	top: 150%;
+	left: 0%;
+	background-color: black;
+	color: #aeafaf;
+	width: 100%;
+	height: 26%;
+}
+
+
+.pie_pagina p{
+	padding-left: 2%;
+	line-height: 0.5;
+	font-size: 1.2em;
+
+}
+
+.pie_pagina img{
+	position: absolute;
+	top: 0%;
+	left: 88%;
+	height: 100%
+}
+
+.sociales{
+	position: absolute;
+	left: 40%;
+	top: 150%;
+	width: 40%;
+	height: 26%;
+}
+
+@keyframes cf3FadeInOut {
+	0% {
+		opacity:1;
+	}
+	45% {
+		opacity:1;
+	}
+	55% {
+		opacity:0;
+	}
+	100% {
+		opacity:0;
+}
+}
+
+#cf3 img {
+	position:absolute;
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+}
+
+#cf3 img.top {
+	animation-name: cf3FadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 7s;
+	animation-direction: alternate;
+}
