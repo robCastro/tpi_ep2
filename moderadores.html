@@ -6,6 +6,17 @@
 	<title>Mi pulgarcito | Moderadores</title>
 	
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/moderadores.css">
+
+	<script type="text/javascript">
+		var codigosModeradores = [1, 2, 3];
+		var nombresModeradores = ['Patricia', 'Veronica', 'Cristian'];
+		var apellidosModeradores = ['Solano', 'Cornejo', 'Castillo'];
+		var fechasModeradores = ['1996-08-14', '1996-05-12', '1995-02-07'];
+		var usuariosModeradores = ['paty', 'vero', 'cris'];
+	</script>
+	<script type="text/javascript" src="js/moderadores.js"></script>
+
 	
 </head>
 <body style="background-image: url('images/background.jpg'); width: 100%">
@@ -33,12 +44,12 @@
 	<div class="sesion">	
 		<table width="100%">
 			<tr>
-				<td width="5%"><a class="link_especial" href="#">Home</a></td>
+				<td width="5%"><a class="link_especial" href="#">Aprobaciones</a></td>
 				<td width="3%"></td>
-				<td width="10%"><a class="link_especial" href="#">Quienes Somos</a></td>
+				<td width="10%"><a class="link_especial" href="#">Moderadores</a></td>
 				<td width="3%"></td>
-				<td width="5%"><a class="link_especial" href="#">Contenido</a></td>
-				
+				<td width="5%"><a class="link_especial" href="#">Credenciales</a></td>
+				<td></td>
 			</tr>
 		</table>
 	</div>
@@ -47,10 +58,43 @@
 
 
 
+	<div class="divBotonesModerador">
+		<table>
+			<tr>
+				<td><button onclick="verFormNuevo()">Nuevo</button></td>
+				<td width="10%"></td>
+				<td><button onclick="eliminar()">Eliminar</button></td>
+				<td></td>
+			</tr>
+		</table>
+	</div>
 
 
+	<div class="formNuevoModerador" id="formNuevoModerador" hidden="">
+		<h2>Nuevo Moderador</h2>
+		<label for="txtNombre">Nombre:</label>
+		<input type="text" id="txtNombre">
+		<label style="position: absolute; top: 200%" for="txtApellido">Apellido:</label>
+		<input style="position: absolute; top: 200%" type="text" id="txtApellido">
+		<label style="position: absolute; top: 300%" for="txtUsuario">Fecha Nac:</label>
+		<input style="position: absolute; top: 300%" type="date" id="txtFecha">
+		<label style="position: absolute; top: 400%" for="txtUsuario">Usuario:</label>
+		<input style="position: absolute; top: 400%" type="text" id="txtUsuario">
 
-	<!--Contenido aca-->
+
+		<p id="alerta" hidden style="position: absolute; top: 380%; left: 32%; color: red;" ><strong>Usuario Invalido</strong></p>
+		<p id="correcto" hidden style="position: absolute; top: 380%; left: 32%; color: green;" ><strong>Guardado</strong></p>
+		<button onclick="guardarModerador()" style="position: absolute; top: 500%">Guardar</button>
+		<button onclick="cancelarNuevo()" style="position: absolute; top: 500%; left: 15%">Cancelar</button>
+	</div>
+
+
+	<div class="divTablaModeradores" id="divTablaModeradores">
+		<table width="80%" class="tabla_moderadores" id="tabla_moderadores">
+		<!-- Tabla llenada desde moderadores.js -->
+		</table>
+	</div>
+	
 
 
 
