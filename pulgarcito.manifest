@@ -1,0 +1,41 @@
+CACHE MANIFEST
+# v1 2011-08-14
+# Este es otro comentario
+https://rinconcito-del-pulgarcito.000webhostapp.com/index.html
+https://rinconcito-del-pulgarcito.000webhostapp.com/contact.html
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/home.css
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/alternative.css
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/escudo.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/logo_mp.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/a1.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/a2.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/a3.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/a4.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/b1.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/b2.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/b3.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/b4.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/b5.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/facebook.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/twitter.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/google-plus.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/images/logo_ues.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/js/iniciar_sesion.js
+https://rinconcito-del-pulgarcito.000webhostapp.com/js/envio.js
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/image/alternative.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/image/background.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/image/grass.jpg
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/image/logo_mp.png
+https://rinconcito-del-pulgarcito.000webhostapp.com/css/image/escudo.png
+
+# Usar desde la red si está disponible
+NETWORK:
+about.html
+gallery.html
+icons.html
+moderadores.html
+services.html
+
+
+# Contenido de fallback
+FALLBACK:
