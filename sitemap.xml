@@ -8,6 +8,30 @@
 	<priority>1.0</priority>
 </url>
 <url>
+	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contenido.html</loc>
+	<lastmod>2018-10-07</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/bosques.html</loc>
+	<lastmod>2018-10-07</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.7</priority>
+</url>
+<url>
+	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/playas.html</loc>
+	<lastmod>2018-10-07</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.7</priority>
+</url>
+<url>
+	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/pluebosVivos.html</loc>
+	<lastmod>2018-10-07</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.7</priority>
+</url>
+<url>
 	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contact.html</loc>
 	<lastmod>2018-10-07</lastmod>
 	<changefreq>monthly</changefreq>
@@ -19,6 +43,9 @@
 	<changefreq>weekly</changefreq>
 	<priority>0.1</priority>
 </url>
-
-
-
+<url>
+	<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/quienesSomos.html</loc>
+	<lastmod>2018-10-07</lastmod>
+	<changefreq>weekly</changefreq>
+	<priority>0.1</priority>
+</url>
