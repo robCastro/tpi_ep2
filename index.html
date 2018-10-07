@@ -1,88 +1,149 @@
 <!DOCTYPE html>
-<html>
+<html manifest="pulgarcito.manifest">
 <head>
-	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Elena Marisol Garcia Abrego">
+    <meta name="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turisticos, gastronomia, pueblos vivos, tradiciones de nuestro peque&ntilde;o pais El Salvador">
+    <meta name="keywords" content="Mi Pulgarcito, mi pulgarcito, Rinconcito del pulgarcito, conociendo El Salvador">
 
-	<title>Mi pulgarcito | Home</title>
+	<title>Mi Pulgarcito | Conociendo El Salvador</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" title="default-blue" type="text/css" href="css/home.css">
+	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
+	<link rel="icon" type="image/x-icon" href="https://rinconcito-del-pulgarcito.000webhostapp.com/favicon.ico">
+	
+	<!--Protocolo opengraph-->
+	<meta property="og:type" content="website">
+	<meta property="og:locale" content="es_ES">
+	<meta property="og:url" content="https://rinconcito-del-pulgarcito.000webhostapp.com/">
+	<meta property="og:title" content="Mi Pulgarcito | Conociendo El Salvador">
+	<meta property="og:description" content="No tienes que salir del pais para disfrutrar de comida exquisita, paisajes hermosos y lugares sorprendentes, todo lo bueno esta en El Salvador. Descubre lugares increibles.">
+	<meta property="og:image" content="https://rinconcito-del-pulgarcito.000webhostapp.com/images/b3.jpg">
+	<meta property="og:site_name" content="MiPulgarcito">
+	<meta property="fb:app_id" content="2226022097669641" />
+	
+	<!--Protocolo card twitter-->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://rinconcito-del-pulgarcito.000webhostapp.com/">
+	<meta name="twitter:title" content="Mi Pulgarcito | Conociendo El Salvador">
+	<meta name="twitter:description" content="No tienes que salir del pais para disfrutrar de comida exquisita, paisajes hermosos y lugares sorprendentes, todo lo bueno esta en El Salvador. Descubre lugares increibles.">
+	<meta name="twitter:image:src" content="https://rinconcito-del-pulgarcito.000webhostapp.com/images/b3.jpg">
+	<meta name="twitter:site" content="MiPulgarcito">
+
 	<script type="text/javascript" src="js/iniciar_sesion.js"></script>
 	
 </head>
-<body style="background-image: url('images/background.jpg'); width: 100%">
-	<div style="width: 100%; height: 10%; position: absolute; top: 0px; left: 0px;">
-		<img src="images/grass.jpg" style="height: 200%; width: 100%" >
-	</div>
-	
-	<div class="banner">
-		<a href="index.html">
-			<table width="100%">
-				<tr>
-					<td>
-						<img src="images/logo.png">
-					</td>
-					<td width="5%"></td>
-					<td>
-						<h1 style="color: white;">Mi Pulgarcito</h1>
-					</td>
-					<td></td>
-				</tr>
-			</table>
+<body>
+	<div class="header">
+		<a href="index.html" style="background-color: transparent;">
+			<img src="images/escudo.png" alt="escudo El Salvador">
+			<img src="images/logo_mp.png" alt="Logotipo">
 		</a>
 	</div>
-
-	<div class="sesion">	
-		<table width="100%">
-			<tr>
-				<td width="5%"><a class="link_especial" href="#">Home</a></td>
-				<td width="3%"></td>
-				<td width="15%"><a class="link_especial" href="#">Quienes Somos</a></td>
-				<td width="3%"></td>
-				<td width="5%"><a class="link_especial" href="#">Contenido</a></td>
-				<td width="3%"></td>
-				<td width="5%"><a class="link_especial" href="#">Contactenos</a></td>
-
-				<td width="20%"></td>
-
-				<td width="10%">
-					<input type="text" id="txtUser" placeholder="Usuario/User">
-				</td>
-				<td width="2%"></td>
-				<td width="10%">
-					<input type="password" id="txtPass" placeholder="Contraseña/Password">
-				</td>
-				<td width="2%"></td>
-				<td width="10%" align="rigth"><button onclick="iniciarSesion()">Iniciar Sesion</button></td>
-			</tr>
-		</table>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+	    <a href="#about">Quienes Somos</a>
+	    <a href="#contact">Contenido</a>
+	    <a href="contact.html">Contactenos</a>
+	    <div class="container">
+	    	<form>
+		    	<input type="text" id="txtUser" placeholder="Usuario/User">
+			    <input type="password" id="txtPass" placeholder="Contrase&ntilde;a/Password">
+			    <button onclick="iniciarSesion()">Iniciar Sesion</button>
+		    </form>
+	    </div>
 	</div>
-	
-
-	<div id="cf3" class="images_container">
-		<img src="images/b2.jpg" class="bottom" style="display: inline; padding-left: 20%; padding-right: 10%; padding-top: 5%; padding-bottom: 5%;">
-		<img src="images/b1.jpg" class="top" style="display: inline;  padding-left: 15%; padding-right: 10%; padding-top: 5%; padding-bottom: 5%;">
+	<br><br>
+	<div class="slideshow-container">
+		<div class="mySlides fade">
+		  	<img src="images/b1.jpg" style="width:100%" alt="Ruinas de San Andres">
+		  	<div class="text">Sitios Arqueologicos</div>
+		</div>
+		<div class="mySlides fade">
+		  	<img src="images/b2.jpg" style="width:100%" alt="Pupusas">
+		  	<div class="text">Comida</div>
+		</div>
+		<div class="mySlides fade">
+		  	<img src="images/b3.jpg" style="width:100%" alt="Playa el Tunco">
+		  	<div class="text">Playas</div>
+		</div>
+		<div class="mySlides fade">
+		  	<img src="images/b4.jpg" style="width:100%" alt="Gente">
+		  	<div class="text">Gente</div>
+		</div>
+		<div class="mySlides fade">
+		  	<img src="images/b5.jpg" style="width:100%" alt="Tradiciones">
+		  	<div class="text">Tradiciones</div>
+		</div>
 	</div>
+	<br>
+
+	<div style="text-align:center">
+		<span class="dot" onclick="currentSlide(1)"></span> 
+		<span class="dot" onclick="currentSlide(2)"></span> 
+		<span class="dot" onclick="currentSlide(3)"></span> 
+		<span class="dot" onclick="currentSlide(4)"></span> 
+		<span class="dot" onclick="currentSlide(5)"></span> 
+	</div>
+
+	<br><br>
 
 	<div class="images_menu">
 		<img src="images/a1.jpg" style="position: relative; left: 3%;">
 		<img src="images/a2.jpg" style="position: relative; left: 9%;">
 		<img src="images/a3.jpg" style="position: relative; left: 15%;">
 		<img src="images/a4.jpg" style="position: relative; left: 21%;">
-
 	</div>
 
-	<div class="pie_pagina" >
-		<p>Universidad de El Salvador</p>
-		<p>Facultad de Ingenieria y Arquitectura</p>
-		<p>Escuela de Ingenieria de Sistemas</p>
-		<p>Tecnicas de Programacion para Internet</p>
-		<p>Grupo 05</p>
-		<img src="images/logo_ues.png">
-	</div>
-	<div class="sociales">
-		<a href="www.google.com" target="_blank"><img src="images/fb_icono.png" style="height: 70%; padding-top: 1%" align="top"></a>
-		<a href=""><img src="images/twitter_icono.png" style="height: 95%" align="top"></a>
-		<a href=""><img src="images/google_icono.png" style="height: 100%" align="top"></a>
-	</div>
+	<br><br>
+
+	<footer class="row">
+        <div class="column left">
+            <a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook"></a>
+            <a href="https://twitter.com/MPulgarcito"><img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter"></a>
+            <a href=""><img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus"></a>
+        </div>
+        <div class="column middle">
+            <p>Universidad de El Salvador</p>
+            <p>Facultad de Ingenieria y Arquitectura</p>
+            <p>Escuela de Ingenieria de Sistemas</p>
+            <p>Tecnicas de Programacion para Internet</p>
+            <p>Grupo 05</p>
+        </div>
+        <div class="column right">
+            <img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
+        </div>
+    </footer> 
+	<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+		    var i;
+		    var slides = document.getElementsByClassName("mySlides");
+		    var dots = document.getElementsByClassName("dot");
+		    for (i = 0; i < slides.length; i++) {
+		       slides[i].style.display = "none";  
+		    }
+		    slideIndex++;
+		    if (slideIndex > slides.length) {slideIndex = 1}    
+		    for (i = 0; i < dots.length; i++) {
+		        dots[i].className = dots[i].className.replace(" active", "");
+		    }
+		    slides[slideIndex-1].style.display = "block";  
+		    dots[slideIndex-1].className += " active";
+		    setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+	</script>
+	<script type='application/ld+json'> 
+		{
+		  	"@context": "http://www.schema.org",
+		  	"@type": "WebSite",
+		  	"name": "Mi Pulgarcito",
+		  	"alternateName": "Rinconcito del Pulgarcito",
+		  	"url": "https://rinconcito-del-pulgarcito.000webhostapp.com/"
+		}
+	 </script>
 </body>
+
 </html>
