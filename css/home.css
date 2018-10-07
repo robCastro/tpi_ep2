@@ -62,6 +62,7 @@ body{
   border: none;
   cursor: pointer;
 }
+
 .topnav .container button:hover {
   background: #ccc;
 }
@@ -166,7 +167,7 @@ img {vertical-align: middle;}
 }
 
 footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -214,11 +215,10 @@ footer {
   cursor: pointer;
   width: 50%
 }
+
 .wrapper input[type=submit]:hover {
   background: #ccc;
 }
-
-
 
 @-webkit-keyframes fade {
   from {opacity: .4} 
@@ -250,6 +250,7 @@ footer {
   .topnav input[type=text], .topnav input[type=password] {
     border: 1px solid #ccc;  
   }
+}
 
 @media screen and (max-width: 600px) {
     .column {
