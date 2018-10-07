@@ -5,60 +5,35 @@
 
 	<title>Mi pulgarcito | Quienes Somos</title>
 	
-	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" title="default-blue" type="text/css" href="css/home.css">
+	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
+	<link rel="icon" type="image/x-icon" href="https://rinconcito-del-pulgarcito.000webhostapp.com/favicon.ico">
 	
 </head>
-<body style="background-image: url('images/background.jpg'); width: 100%">
-	<div style="width: 100%; height: 10%; position: absolute; top: 0px; left: 0px;">
-		<img src="images/grass.jpg" style="height: 200%; width: 100%" >
-	</div>
-	
-	<div class="banner">
-		<a href="index.html">
-			<table width="100%">
-				<tr>
-					<td>
-						<img src="images/logo.png">
-					</td>
-					<td width="5%"></td>
-					<td>
-						<h1 style="color: white;">Mi Pulgarcito</h1>
-					</td>
-					<td></td>
-				</tr>
-			</table>
+<body>
+	<div class="header">
+		<a href="index.html" style="background-color: transparent;">
+			<img src="images/escudo.png" alt="escudo El Salvador">
+			<img src="images/logo_mp.png" alt="Logotipo">
 		</a>
 	</div>
 
-	<div class="sesion">	
-		<table width="100%">
-			<tr>
-				<td width="5%"><a class="link_especial" href="#">Home</a></td>
-				<td width="3%"></td>
-				<td width="15%"><a class="link_especial" href="quienesSomos.html">Quienes Somos</a></td>
-				<td width="3%"></td>
-				<td width="5%"><a class="link_especial" href="contenido.html">Contenido</a></td>
-				<td width="3%"></td>
-				<td width="5%"><a class="link_especial" href="#">Contactenos</a></td>
-
-				<td width="20%"></td>
-
-				<td width="10%">
-					<input type="text" id="txtUser" placeholder="Usuario/User">
-				</td>
-				<td width="2%"></td>
-				<td width="10%">
-					<input type="password" id="txtPass" placeholder="Contraseña/Password">
-				</td>
-				<td width="2%"></td>
-				<td width="10%" align="rigth"><button onclick="iniciarSesion()">Iniciar Sesion</button></td>
-			</tr>
-		</table>
+	<div class="topnav">
+		<a class="active" href="index.html">Home</a>
+	    <a href="quienesSomos">Quienes Somos</a>
+	    <a href="contenido.html">Contenido</a>
+	    <a href="contact.html">Contactenos</a>
+	    <div class="container">
+	    	<form>
+		    	<input type="text" id="txtUser" placeholder="Usuario/User">
+			    <input type="password" id="txtPass" placeholder="Contrase&ntilde;a/Password">
+			    <button type="button" onclick="iniciarSesion()">Iniciar Sesion</button>
+		    </form>
+	    </div>
 	</div>
-	
 
 	
-	<div style="padding-top: 13%">
+	<div>
 		<table width="100%">
 			<tr>
 				<td width="5%"></td>
@@ -76,19 +51,24 @@
 				</td>
 			</tr>	
 	</div>
+	<br><br>
 
-	<div class="pie_pagina" style="top:90%"">
-		<p>Universidad de El Salvador</p>
-		<p>Facultad de Ingenieria y Arquitectura</p>
-		<p>Escuela de Ingenieria de Sistemas</p>
-		<p>Tecnicas de Programacion para Internet</p>
-		<p>Grupo 05</p>
-		<img src="images/logo_ues.png">
-	</div>
-	<div class="sociales" style="top:90%"">
-		<a href="www.google.com" target="_blank"><img src="images/fb_icono.png" style="height: 70%; padding-top: 1%" align="top"></a>
-		<a href=""><img src="images/twitter_icono.png" style="height: 95%" align="top"></a>
-		<a href=""><img src="images/google_icono.png" style="height: 100%" align="top"></a>
-	</div>
+	<div class="row" style= "position: absolute; top: 110%; width: 100%;">
+        <div class="column left">
+            <a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook"></a>
+            <a href="https://twitter.com/MPulgarcito"><img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter"></a>
+            <a href=""><img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus"></a>
+        </div>
+        <div class="column middle">
+            <p>Universidad de El Salvador</p>
+            <p>Facultad de Ingenieria y Arquitectura</p>
+            <p>Escuela de Ingenieria de Sistemas</p>
+            <p>Tecnicas de Programacion para Internet</p>
+            <p>Grupo 05</p>
+        </div>
+        <div class="column right">
+            <img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
+        </div>
+    </div> 
 </body>
 </html>
