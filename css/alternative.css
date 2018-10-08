@@ -6,6 +6,41 @@ body{
 margin: 0;
   	font-family: Arial, Helvetica, sans-serif;
 }
+td, th{
+    border: 2px solid black;
+    }
+table{
+      border-collapse: collapse;
+      margin:50px auto;
+      font-family: Arial;
+    }
+#pie{
+      position: fixed;
+      left: 0px;
+      bottom: 0px;
+      height: 200px;
+      width: 100%;
+    }
+#divcontra{
+      background-color: #FDFEFE;
+      width: 400px;
+      height: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: auto;
+      border-radius: 6px;
+    }
+#boton_cam{
+      text-decoration: none;
+      padding: 7px;
+      font-weight: 60;
+      font-size: 15px;
+      color: #FDFEFE;
+      background-color: #283747;
+      border-radius: 6px;
+      border: 5px;
+      font-family: Arial;
+      }
 
 .header{
   overflow: hidden;
