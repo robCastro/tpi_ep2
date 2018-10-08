@@ -1,7 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-127145400-1');
+	</script>
 	<meta charset="UTF-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="robots" content="index, follow"/>
+	<meta name="author" content="Patricia Solano">
 
 	<title>Mi pulgarcito | Quienes Somos</title>
 	
@@ -11,49 +23,44 @@
 	
 </head>
 <body>
-	<div class="header">
+	<header class="header">
 		<a href="index.html" style="background-color: transparent;">
 			<img src="images/escudo.png" alt="escudo El Salvador">
 			<img src="images/logo_mp.png" alt="Logotipo">
 		</a>
-	</div>
+	</header>
 
-	<div class="topnav">
+	<nav class="topnav">
 		<a href="index.html">Home</a>
 	    <a class="active" href="quienesSomos">Quienes Somos</a>
 	    <a href="contenido.html">Contenido</a>
 	    <a href="contact.html">Contactenos</a>
-	    <div class="container">
-	    	<form>
-		    	<input type="text" id="txtUser" placeholder="Usuario/User">
-			    <input type="password" id="txtPass" placeholder="Contrase&ntilde;a/Password">
-			    <button type="button" onclick="iniciarSesion()">Iniciar Sesion</button>
-		    </form>
-	    </div>
-	</div>
+	</nav>
 
 	
-	<div>
-		<table width="100%">
-			<tr>
-				<td width="5%"></td>
-				<td width="43%" style="text-align: justify;">
-					<p style="font-size: 200%; font-style: italic;">¿Quiénes somos?</p>
-						<p style="font-style: italic; font-size: 150%">Rinconcito del Pulgarcito muestra las maravillas de El Salvador, con nosotros puedes encontrar todo lo relacionado a sitios turisticos, pueblos vivos y tradiciones de nuestro país.</p>
-					  	<p style="font-style: italic; font-size: 150%">Somos un sitio formado por todos los colaboradores que comparten sus experiencias en los lugares turisticos, únete y mostremos juntos la belleza con la que cuenta nuestro pulgarcito. </p>		
-				</td>
-				<td width="10%"></td>
-				<td width="40%">
-					 <video width="500" height="300" controls>
-  						<source src="videos/ElSalvador.mp4" type="video/mp4">
-					</video> 
-				
-				</td>
-			</tr>	
-	</div>
-	<br><br>
+	<main>
+		<div>
+			<table width="100%">
+				<tr>
+					<td width="5%"></td>
+					<td width="43%" style="text-align: justify;">
+						<p style="font-size: 200%; font-style: italic;">¿Quiénes somos?</p>
+							<p style="font-style: italic; font-size: 150%">Rinconcito del Pulgarcito muestra las maravillas de El Salvador, con nosotros puedes encontrar todo lo relacionado a sitios turisticos, pueblos vivos y tradiciones de nuestro país.</p>
+							  <p style="font-style: italic; font-size: 150%">Somos un sitio formado por todos los colaboradores que comparten sus experiencias en los lugares turisticos, únete y mostremos juntos la belleza con la que cuenta nuestro pulgarcito. </p>		
+					</td>
+					<td width="10%"></td>
+					<td width="40%">
+						 <video width="500" height="300" controls>
+							  <source src="videos/ElSalvador.mp4" type="video/mp4">
+						</video> 
+					
+					</td>
+				</tr>	
+		</div>
+		<br>
+	</main>
 
-	<div class="row" style= "position: absolute; top: 110%; width: 100%;">
+	<footer class="row" style= "position: absolute; top: 110%; width: 100%;">
         <div class="column left">
             <a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook"></a>
             <a href="https://twitter.com/MPulgarcito"><img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter"></a>
@@ -69,6 +76,6 @@
         <div class="column right">
             <img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
         </div>
-    </div> 
+    </footer> 
 </body>
 </html>

@@ -2,11 +2,21 @@
 <html manifest="pulgarcito.manifest">
 
 <head>
+    <!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-127145400-1');
+    </script>
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Elena Marisol Garcia Abrego">
-    <meta name="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turisticos, gastronomia, pueblos vivos, tradiciones de nuestro peque&ntilde;o pais El Salvador">
-
-    <title>Mi Pulgarcito | Conociendo El Salvador</title>
+    <meta name="robots" content="index, follow" />
+    
+    <title>Mi Pulgarcito | Contactanos</title>
 
     <link rel="stylesheet" title="Default-blue" type="text/css" href="css/home.css">
     <link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
@@ -16,23 +26,16 @@
 
 <body>
     <header class="header">
-        <a href="/index" style="background-color: transparent;">
-            <img src="images/escudo.png" alt="escudo El Salvador" style="height: 100%">
-            <img src="images/logo_mp.png" alt="Logotipo" style="height: 100%">
+        <a href="index.html" style="background-color: transparent;">
+            <img src="images/escudo.png" alt="escudo El Salvador">
+            <img src="images/logo_mp.png" alt="Logotipo">
         </a>
     </header>
     <nav class="topnav">
-        <a href="/index">Home</a>
-        <a href="/quienesSomos">Quienes Somos</a>
-        <a href="/contenido">Contenido</a>
-        <a class="active" href="/contact">Contactenos</a>
-        <div class="container">
-            <form>
-                <input type="text" id="txtUser" placeholder="Usuario/User">
-                <input type="password" id="txtPass" placeholder="Contrase&ntilde;a/Password">
-                <button onclick="iniciarSesion()">Iniciar Sesion</button>
-            </form>
-        </div>
+        <a href="index.html">Home</a>
+        <a href="quienesSomos.html">Quienes Somos</a>
+        <a href="contenido.html">Contenido</a>
+        <a class="active" href="contact.html">Contactenos</a>
     </nav>
     <main>
         <br>
@@ -63,7 +66,7 @@
             <a href="https://twitter.com/MPulgarcito">
                 <img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter">
             </a>
-            <a href="">
+            <a href="https://plus.google.com/u/0/113552977623674997858">
                 <img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus">
             </a>
         </div>

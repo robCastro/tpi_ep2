@@ -3,7 +3,7 @@
 body{
 	background-image: url("images/background.png");
 	margin: 0;
-  	font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 td, th{
@@ -44,8 +44,7 @@ table{
 
 .header{
   	overflow: hidden;
-	background-image: url("images/grass.jpg");
-	background-size: 100%;
+	  background-image: url("images/grass.jpg");
   	width: 100%;
   	display: block;
 }
@@ -254,6 +253,16 @@ footer {
 
 .wrapper input[type=submit]:hover {
   background: #ccc;
+}
+
+.contenido{
+  color: white;
+  font-size: 25px;
+  font-weight: normal;
+  width: 80%;
+  margin: auto;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 @-webkit-keyframes fade {
