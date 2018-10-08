@@ -1,92 +1,123 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8"> 
+	<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-127145400-1');
+	</script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Patricia Solano">
+	<meta name="description" content="El Salvador cuenta con un conjunto de pueblos, pequeños en territorio pero muy visitados por turistas; además su historia
+	es muy interesante. La diversidad de rutas turística con las que cuenta El Salvador, se adentra por el patrimonio cultural, 
+	recorriendo mágicos poblados">
+	<meta name="keywords" content="pueblos vivos, tradiciones artesanas, festivales gastronómicos, cultura cafetera, entornos coloniales, miradores naturales, 
+	cascadas, lagunas y sitios arqueológicos ">
+	<meta name="robots" content="index, follow" />
 
 	<title>Mi pulgarcito | Pueblos Vivos</title>
-	
+
 	<link rel="stylesheet" title="default-blue" type="text/css" href="css/home.css">
 	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
 	<link rel="icon" type="image/x-icon" href="https://rinconcito-del-pulgarcito.000webhostapp.com/favicon.ico">
 	<link rel="stylesheet" type="text/css" href="css/contenido.css">
-	
+
 </head>
+
 <body>
-	<div class="header">
+	<header class="header">
 		<a href="index.html" style="background-color: transparent;">
 			<img src="images/escudo.png" alt="escudo El Salvador">
 			<img src="images/logo_mp.png" alt="Logotipo">
 		</a>
-	</div>
-	<div class="topnav">
+	</header>
+	<nav class="topnav">
 		<a class="active" href="pueblosVivos.html">Pueblos Vivos</a>
-	    <a href="playas.html">Playas</a>
-	    <a href="bosques.html">Bosques</a>
-	    <a href="#">Compartir</a>
-	    <div class="container">
-	    	<form>
-		    	<input type="text" id="txtUser" placeholder="Usuario/User">
-			    <input type="password" id="txtPass" placeholder="Contrase&ntilde;a/Password">
-			    <button type="button" onclick="iniciarSesion()">Iniciar Sesion</button>
-		    </form>
-	    </div>
-	</div>
-	
-	<!--Pueblos Vivos-->
+		<a href="playas.html">Playas</a>
+		<a href="bosques.html">Bosques</a>
+		<a href="#">Compartir</a>
+	</nav>
+	<section class="contenido">
+		<p>
+			El Salvador cuenta con un conjunto de pueblos, pequeños en territorio pero muy visitados por turistas; además su historia
+			es muy interesante. La diversidad de rutas turística con las que cuenta El Salvador, se adentra por el patrimonio cultural, 
+			recorriendo mágicos poblados con
+			<strong>tradiciones artesanas, festivales gastronómicos, cultura cafetera y entornos coloniales.</strong>
+			<br>
+			<br> Anímate a visitarlos descubrirás en su recorrido un verdadero mosaico de actividades entre las cuales se encuentran;
+			cultivo de plantas ornamentales, Artesanías en madera, miradores naturales, cascadas, lagunas y sitios arqueológicos situados
+			en sus entornos, etc.
 
-	<div class="gallery" align="center">
-		<div class="desc">Alegria, Usulután</div>
-  		<!--<a target="_blank" href="images/p1.jpg">-->
-    		<img src="images/alegria.jpg">
-  		</a>
-	</div>
+		</p>
+	</section>
+	<section>
+		<!--Pueblos Vivos-->
 
-	<div class="gallery" align="center">
-		<div class="desc">Suchitoto, Cuscatlán</div>
-  		<!--<a target="_blank" href="images/p1.jpg">-->
-    		<img src="images/suchitoto.jpg">
-  		</a>
-	</div>
+		<div class="gallery" align="center">
+			<div class="desc">Alegria, Usulután</div>
+			<!--<a target="_blank" href="images/p1.jpg">-->
+			<img src="images/alegria.jpg">
+			</a>
+		</div>
 
-	<div class="gallery" align="center">
-		<div class="desc">Concepción de Ataco, Ahuchapán</div>
-  		<!--<a target="_blank" href="images/p1.jpg">-->
-    		<img src="images/concepcion de ataco.jpg">
-  		</a>
-	</div>
-	<div class="gallery" align="center">
-		<div class="desc">Ilobasco, Cabañas</div>
-  		<!--<a target="_blank" href="images/p1.jpg">-->
-    		<img src="images/ilobasco.jpg">
-  		</a>
-	</div>
-	
-	<div class="gallery" align="center">
-		<div class="desc">Apaneca, Ahuchapán</div>
-  		<!--<a target="_blank" href="images/p1.jpg">-->
-    		<img src="images/apaneca.jpg">
-  		</a>
-	</div>
+		<div class="gallery" align="center">
+			<div class="desc">Suchitoto, Cuscatlán</div>
+			<!--<a target="_blank" href="images/p1.jpg">-->
+			<img src="images/suchitoto.jpg">
+			</a>
+		</div>
 
-	<br>
+		<div class="gallery" align="center">
+			<div class="desc">Concepción de Ataco, Ahuchapán</div>
+			<!--<a target="_blank" href="images/p1.jpg">-->
+			<img src="images/concepcion de ataco.jpg">
+			</a>
+		</div>
+		<div class="gallery" align="center">
+			<div class="desc">Ilobasco, Cabañas</div>
+			<!--<a target="_blank" href="images/p1.jpg">-->
+			<img src="images/ilobasco.jpg">
+			</a>
+		</div>
 
-	<div class="row">
-        <div class="column left">
-            <a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook"></a>
-            <a href="https://twitter.com/MPulgarcito"><img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter"></a>
-            <a href=""><img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus"></a>
-        </div>
-        <div class="column middle">
-            <p>Universidad de El Salvador</p>
-            <p>Facultad de Ingenieria y Arquitectura</p>
-            <p>Escuela de Ingenieria de Sistemas</p>
-            <p>Tecnicas de Programacion para Internet</p>
-            <p>Grupo 05</p>
-        </div>
-        <div class="column right">
-            <img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
-        </div>
-    </div> 
-    
+		<div class="gallery" align="center">
+			<div class="desc">Apaneca, Ahuchapán</div>
+			<!--<a target="_blank" href="images/p1.jpg">-->
+			<img src="images/apaneca.jpg">
+			</a>
+		</div>
+	</section>
+	<footer class="row">
+		<div class="column left">
+			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
+				<img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook">
+			</a>
+			<a href="https://twitter.com/MPulgarcito">
+				<img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter">
+			</a>
+			<a href="https://plus.google.com/u/0/113552977623674997858">
+				<img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus">
+			</a>
+		</div>
+		<div class="column middle">
+			<p>Universidad de El Salvador</p>
+			<p>Facultad de Ingenieria y Arquitectura</p>
+			<p>Escuela de Ingenieria de Sistemas</p>
+			<p>Tecnicas de Programacion para Internet</p>
+			<p>Grupo 05</p>
+		</div>
+		<div class="column right">
+			<img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
+		</div>
+	</footer>
+
 </body>
+
 </html>
