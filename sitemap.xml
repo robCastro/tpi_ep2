@@ -1,52 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
+<!-- Ordenados por prioridad-->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/</loc> <!-- index -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contenido.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contenido.html</loc> <!-- fotos -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/quienesSomos.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/quienesSomos.html</loc> <!-- info -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/bosques.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/bosques.html</loc> <!-- fotos -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/playas.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/playas.html</loc> <!-- fotos -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/pluebosVivos.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/pluebosVivos.html</loc><!-- fotos -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.7</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contact.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/contact.html</loc> <!-- contacto -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.1</priority>
 	</url>
 	<url>
-		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/moderadores.html</loc>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/subida.html</loc> <!-- subida de fotos -->
+		<lastmod>2018-10-07</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.1</priority>
+	</url>
+	<!-- toda la parte de admin y moderador no tiene prioridad -->
+	<url>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/moderadores.html</loc> <!-- moderadores -->
 		<lastmod>2018-10-07</lastmod>
 		<changefreq>weekly</changefreq>
-		<priority>0.1</priority>
+		<priority>0.0</priority>
+	</url>
+	<url>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/credenciales.html</loc> <!-- credenciales -->
+		<lastmod>2018-10-07</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.0</priority>
+	</url>
+	<url>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/modalcredenciales.html</loc> <!-- moderadores -->
+		<lastmod>2018-10-07</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.0</priority>
+	</url>
+	<url>
+		<loc>https://rinconcito-del-pulgarcito.000webhostapp.com/moderacionfotos.html</loc> <!-- moderadores -->
+		<lastmod>2018-10-07</lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.0</priority>
 	</url>
 </urlset>

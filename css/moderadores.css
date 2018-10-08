@@ -2,7 +2,28 @@
 	position: absolute;
 	top: 35%;
 	left: 10%;
-	width: 50%;
+	width: 50%;    
+}
+
+button{
+	text-decoration: none;
+    padding: 7px;
+    font-weight: 60;
+    font-size: 15px;
+    color: #FDFEFE;
+    background-color: #2874A6;
+    border-radius: 6px;
+    border: 2px;
+    font-family: Arial;
+}
+
+button:hover{
+	background-color: #287400;
+}
+
+button:disabled{
+	background-color: #c85c64;
+	border: 4px;
 }
 
 
@@ -46,7 +67,7 @@
 
 .tabla_moderadores th, td{
 
-	border-bottom: 1px solid #142e3d;
+	border-bottom: 2px solid #142e3d;
 	padding: 1%;
 }
 

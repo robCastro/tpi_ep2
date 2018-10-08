@@ -1,14 +1,20 @@
 User-agent: *
 Disallow: /credenciales.html
+Disallow: /modalcredenciales.html
+Disallow: /moderacionfotos.html
 Disallow: /moderadores.html
+Disallow: /moderadores_viejo.html
 Disallow: /aprobacion.html
-Disallow: /moderacion.html
+Disallow: /moderacionfotos.html
 Disallow: /detalle_foto/
 
 Noindex: /credenciales.html
+Noindex: /modalcredenciales.html
+Noindex: /moderacionfotos.html
 Noindex: /moderadores.html
+Noindex: /moderadores_viejo.html
 Noindex: /aprobacion.html
-Noindex: /moderacion.html
+Noindex: /moderacionfotos.html
 Noindex: /detalle_foto/
 
 Sitemap:https://rinconcito-del-pulgarcito.000webhostapp.com/sitemap.xml

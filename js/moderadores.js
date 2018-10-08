@@ -31,7 +31,7 @@ window.onload = function(){
 
 	celda4.innerHTML = "<strong>Fecha Nac</strong>";
 
-	celda5.innerHTML = "<strong>Usuario</strong>";
+	celda5.innerHTML = "<strong>Correo</strong>";
 	celda6.innerHTML = "<strong>Eliminar</strong>";
 	for (i = 0; i < 3; i++){
 		var fila = tabla_moderadores.insertRow(i + 1);
@@ -55,7 +55,9 @@ window.onload = function(){
 
 function verFormNuevo(){
 	divFormNuevo = document.getElementById('formNuevoModerador');
+	divFooter = document.getElementById('moderadores_footer');
 	divTabla.style.top = '115%';
+	divFooter.style.top = '150%';
 	//tabla_moderadores.style.top = '100%';
 
 	divFormNuevo.hidden = false;
@@ -67,6 +69,8 @@ function cancelarNuevo(){
 	divFormNuevo.hidden = true;
 	//tabla_moderadores.style.top = '50%';
 	divTabla.style.top = '50%';
+	divFooter = document.getElementById('moderadores_footer');
+	divFooter.style.top = '110%';
 }
 
 function guardarModerador(){
@@ -104,6 +108,29 @@ function guardarModerador(){
 		nombre.focus();
 	}
 	
+}
+
+function isEmail(email) {
+    if(email == ""){
+        return true;
+    }
+    else{
+        var regex = /^([a-zA-Z0-9_.+-])+\@(([a-zA-Z0-9-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        return regex.test(email);
+    }
+}
+
+function validarCorreo(){
+	usuario = document.getElementById('txtUsuario').value;
+	if (isEmail(usuario)){
+
+		document.getElementById('alerta').hidden = true;
+		document.getElementById('btnGuardar').disabled = false;
+	}
+	else{
+		document.getElementById('alerta').hidden = false;
+		document.getElementById('btnGuardar').disabled = true;
+	}
 }
 
 function marcarModerador(r){

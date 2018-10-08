@@ -4,13 +4,16 @@
 	<meta charset="UTF-8"> 
 
 	<title>Mi pulgarcito | Modal credenciales</title>
-	<meta name="description" content="Pagina turismo, Mi pulgarcito"/>
-	<meta name="keywords" content="turismo, comida, bosque, playas, gastronomia, El Salvador"/>
 
 	<link rel="stylesheet" title="Default-blue" type="text/css" href="css/home.css">
 	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
+	<script type="text/javascript">
+		function cambiarContrasena(){
+			window.location.href = 'credenciales.html';
+		}
+	</script>
 
 </head>
 <body>
@@ -20,14 +23,13 @@
 			<img src="images/logo_mp.png">
 		</a>
 	</div>
-	<div class="topnav">
-	    <div class="container">
-	    	<form>
-			    <a href="">Admin</a>
-		    </form>
-	    </div>
-	</div>
-	<br><br><br>
+	<nav class="topnav">
+	    <a href="moderadores.html">Moderadores</a>
+		<a class="active" href="credenciales.html">Credenciales</a>
+		<a href="#contact">Aprobaciones</a>
+	</nav>
+	<br>
+	<br>
 	<div id="divcontra" class="row" >
 		<center>
 			<br>
@@ -42,7 +44,7 @@
 				<input type="password" id="txtPass" placeholder="Confirmar Contraseña">
 			</p>
 			<p>
-			<button id="boton_cam" onclick="cambiarContrasena()">Cambiar contraseña</button>
+			<button id="boton_cam" type="button" onclick="cambiarContrasena()">Cambiar contraseña</button>
 			</p>
 	    </form>
 		    </center>
@@ -55,7 +57,7 @@
 
 
 
-		<div id="pie" class="row">
+		<div style="position: absolute; width: 100%; top: 90%" id="pie" class="row">
 
 		<div class="column left">
   			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top"></a>
