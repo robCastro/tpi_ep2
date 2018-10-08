@@ -9,7 +9,7 @@ function iniciarSesion(){
 	console.log(usuario, pass);
 	for(i = 0; i < moderadores.length; i++){
 		if (moderadores[i] == usuario && pass == passModeradores[i]){
-			window.location.href = "www.google.com";
+			window.location.href = "moderacionfotos.html";
 		}
 		else{
 			if (usuario == administrador && pass == passAdmin)
