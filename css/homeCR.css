@@ -149,7 +149,8 @@ color: #fff;
 }
 footer {
 
-    
+  clear: both;
+  margin-top: 90px;  
     left: 0;
     bottom: 0;
 
@@ -205,7 +206,37 @@ figcaption{
   color: #fff;
   font-size:50px;
   font-style: italic;
+  margin-bottom: 4px;
 }
 
+aside{
+margin-top: 0;
+background-color: black;
+float: left;
+width: 250px;
+text-align: center;
+height: 105%;
+position: absolute;
 
+}
+
+section{
+  clear: both;
+  
+}
+
+#a{
+  background-color: #fff;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  padding-top: 6px;
+  margin-right: 3px;
+  font-size: 25px;
+}
+
+#r{
+  text-decoration: none;
+  color: black;
+}
 
