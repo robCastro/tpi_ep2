@@ -13,7 +13,7 @@ function iniciarSesion(){
 		}
 		else{
 			if (usuario == administrador && pass == passAdmin)
-				window.location.href = "administracion/moderadores.html" ;
+				window.location.href = "moderadores.html" ;
 		}
 	}
 }

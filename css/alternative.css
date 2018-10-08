@@ -182,6 +182,12 @@ img {vertical-align: middle;}
   vertical-align: center;
 }
 
+.left{
+  display: table-cell;
+  vertical-align: middle;
+  padding-top: 50px;
+}
+
 .middle {
   width: 40%;
   text-align: center;
@@ -194,6 +200,59 @@ img {vertical-align: middle;}
     clear: both;
     background-color: #1d1c4c;
     color: #aeafaf;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.wrapper{
+  margin: auto;
+  max-width:50%; 
+}
+
+.wrapper label{
+  color: white;
+  font-size: 17px;
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 8px;
+
+}
+
+.wrapper legend{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+
+}
+
+.wrapper input[type=text], .wrapper input[type=email], .wrapper input[type=tel], .wrapper textarea{
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 8px;
+  font-size: 17px;
+  border: none;
+  width: 100%;
+  margin-bottom: 8px; 
+}
+
+.wrapper input[type=submit] {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  width: 50%
+}
+.wrapper input[type=submit]:hover {
+  background: #ccc;
 }
 
 @-webkit-keyframes fade {
