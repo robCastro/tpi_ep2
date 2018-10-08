@@ -4,8 +4,8 @@ var passModeradores = ["tpi115", "doberto115", "tpi115", "tpi115"];
 var passAdmin = "tpi115_marisol";
 
 function iniciarSesion(){
-	var usuario = document.getElementById('txtUser').value;
-	var pass = document.getElementById('txtPass').value;
+	var usuario = document.getElementById("txtUser").value;
+	var pass = document.getElementById("txtPass").value;
 	console.log(usuario, pass);
 	for(i = 0; i < moderadores.length; i++){
 		if (moderadores[i] == usuario && pass == passModeradores[i]){
