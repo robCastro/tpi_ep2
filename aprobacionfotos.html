@@ -12,21 +12,19 @@
 		gtag('config', 'UA-127145400-1');
 	</script>
 
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-
-		gtag('config', 'UA-127145400-1');
-	</script>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="index, follow" />
 
 	<title>Mi Pulgarcito | Aprobacion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cristian Castillo, Roberto Castro, Veronica Cornejo, Marisol Garcia, Patricia Solano">
+    <meta name="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turisticos, gastronomia, pueblos vivos, tradiciones de nuestro peque&ntilde;o pais El Salvador">
+    <meta name="keywords" content="Mi Pulgarcito, mi pulgarcito, Rinconcito del pulgarcito, conociendo El Salvador, Turismo, El Salvador">
+    <meta name="robots" content="index, follow"/>
+    <meta charset="UTF-8"> 
 
 	<link rel="stylesheet" title="Default-blue" type="text/css" href="css/homeCR.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script type="text/javascript" src="js/data-confirmacion.js"></script>
+
 
 </head>
 
@@ -63,10 +61,10 @@
 				</figcaption>
 			</figure>
 			<div id="botones">
-				<input id="ap" type="button" value="Aprobar">
+				<input id="ap" type="button" data-mensajea="Aprobada" onclick="aprobada(this)" value="Aprobar">
 			</div>
 			<div id="botones">
-				<input id="rep" type="button" value="Reprobar">
+				<input id="rep" type="button"  data-mensajer="Reportada" onclick="reportada(this)" value="Reprobar">
 			</div>
 		</form>
 	</section>

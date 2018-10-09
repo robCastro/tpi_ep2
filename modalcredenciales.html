@@ -1,13 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
+	<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-127145400-1');
+	</script>
+
 	<meta charset="UTF-8"> 
 
 	<title>Mi pulgarcito | Modal credenciales</title>
 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Cristian Castillo, Roberto Castro, Veronica Cornejo, Marisol Garcia, Patricia Solano">
+    <meta name="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turisticos, gastronomia, pueblos vivos, tradiciones de nuestro peque&ntilde;o pais El Salvador">
+    <meta name="keywords" content="Mi Pulgarcito, mi pulgarcito, Rinconcito del pulgarcito, conociendo El Salvador, Turismo, El Salvador">
+    <meta name="robots" content="index, follow"/>
+
+
 	<link rel="stylesheet" title="Default-blue" type="text/css" href="css/home.css">
 	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<script type="text/javascript" src="js/data-confirmacion.js"></script>
 
 	<script type="text/javascript">
 		function cambiarContrasena(){
@@ -44,7 +62,7 @@
 				<input type="password" id="txtPass" placeholder="Confirmar Contraseña">
 			</p>
 			<p>
-			<button id="boton_cam" type="button" onclick="cambiarContrasena()">Cambiar contraseña</button>
+			<button id="boton_cam" type="button" data-confirma="Guardado" onclick="confirmacion(this)" onclick="cambiarContrasena()">Cambiar contraseña</button>
 			</p>
 	    </form>
 		    </center>
