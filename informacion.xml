@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="css/informacion.css"?>
+
+<informacion>
+  <tema id="tem1">
+    <titulo>Turismo</titulo>
+    <descripcion>Es un recurso muy importante con el que cuenta El Salvador, para el desarrollo económico;
+    posee excelentes atractivos naturales, que puedes visitar y vivir experiencias increíbles.
+    entre los cuales se encuentran playas paradisiacas, un clima tropical y paisajes maravillosos; además de 
+    contar con un patrimonio arqueológico y ecológico, con vestigios coloniales y precolombinos. Sin olvidar 
+    por supuesto las increíbles reservas nacionales. 
+     </descripcion>
+    <image></image>
+  </tema>
+  <tema id="tem2">
+    <titulo>Gastronomía</titulo>
+    <descripcion>Los principales ingredientes con que se elaboran los principales platillos gastronómicos en El 
+    Salvador son: maíz, frijol, arroz, pollo, res, mariscos, animales silvestres, lácteos y muchas frutas y verduras.
+    Entre la comida típica se destacan las pupusas, el platillo más degustado de los salvadoreños, además de tamales, 
+    atol shuco, pasteles, riguas, etc. No debemos olvidar la diversidad de cafés y restaurantes nacionales y 
+    extranjeros, que ofrecen una variedad de platillos. 
+    </descripcion>
+    <image></image>
+  </tema>
+  <tema id="tem3">
+    <titulo>Tradiciones</titulo>
+    <descripcion>Sus principales tradiciones son las fiestas patronales en los diferentes pueblos, además de grupos de 
+    música regional, alfarería, artesanías. Visita los diferentes pueblos vivos, en donde encontraras, artesanías, 
+    alfarería, gastronomía, etc. Además se cuentan con juegos tradicionales como el capirucho, el trompo, las chibolas, etc.
+ </descripcion>
+    <image></image>
+  </tema>
+  <tema id="tem4">
+    <titulo>Flora y Fauna</titulo>
+    <descripcion>El Salvador posee una diversidad de especies de árboles, variedad de orquídeas y animales, su clima y la 
+    variedad altitudinal, ayudan al crecimiento de manglares, lagunas de agua dulce, bosques pantanosos, bosques tropicales,
+    bosques alpinos y bosques de neblina. En las reservas nacionales podrás encontrar una diversidad de fauna como. Atrévete 
+    a visitar el Parque el Imposible, El Trifinio, entre otros; vivirás una experiencia inolvidable. 
+    </descripcion>
+    <image></image>
+  </tema>
+</informacion>

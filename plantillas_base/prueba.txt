@@ -1,0 +1,14 @@
+<informacion>
+  <tema titulo="Turismo" imageurl="images/a1.jpg">
+    <descripcion>me escuchan</descripcion>
+  </tema>
+  <tema id="2" title="Turismo" imageurl="images/a2.jpg">
+    <descripcion>me escuchan</descripcion>
+  </tema>
+  <tema id="3" title="Turismo" imageurl="images/a3.jpg">
+    <descripcion>me escuchan</descripcion>
+  </tema>
+  <tema id="4" title="Turismo" imageurl="images/a4.jpg">
+    <descripcion>me escuchan</descripcion>
+  </tema>
+</informacion>

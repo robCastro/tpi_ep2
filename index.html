@@ -3,14 +3,9 @@
 
 <head>
 	<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+	<script type="text/javascript" src="js/google_analitics.js"></script>
 
-        gtag('config', 'UA-127145400-1');
-	</script>
 	<script type='application/ld+json'> 
 		{
 		  	"@context": "http://www.schema.org",
@@ -20,17 +15,17 @@
 		  	"url": "https://rinconcito-del-pulgarcito.000webhostapp.com/"
 		}
 	 </script>
-	
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="author" content="Cristian Castillo, Roberto Castro, Veronica Cornejo, Marisol Garcia, Patricia Solano">
 	<meta name="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turisticos, gastronomia, pueblos vivos, tradiciones de nuestro peque&ntilde;o pais El Salvador">
 	<meta name="keywords" content="Mi Pulgarcito, mi pulgarcito, Rinconcito del pulgarcito, conociendo El Salvador, Turismo, El Salvador">
-	<meta name="robots" content="index, follow"/>
 
 	<title>Mi Pulgarcito | Conociendo El Salvador</title>
 
 	<link rel="stylesheet" title="default-blue" type="text/css" href="css/home.css">
 	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<link rel="icon" type="image/x-icon" href="https://rinconcito-del-pulgarcito.000webhostapp.com/favicon.ico">
 
 	<!--Protocolo opengraph-->
@@ -52,7 +47,7 @@
 	<meta name="twitter:site" content="MiPulgarcito">
 
 	<script type="text/javascript" src="js/iniciar_sesion.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -75,8 +70,9 @@
 			</form>
 		</div>
 	</nav>
-	<main>
+	<mainclass="titulo">
 		<br>
+		<h1>Rinconcito del Pulgarcito</h1>
 		<br>
 		<section class="slideshow-container">
 			<div class="mySlides fade">
@@ -119,55 +115,122 @@
 			<img src="images/a3.jpg" style="position: relative; left: 15%;">
 			<img src="images/a4.jpg" style="position: relative; left: 21%;">
 		</section>
-
+		<section>
+			<a id="myBtn" href="informacion.xml" style="color: white; font-size: 17px; font-weight: bold; float: right;">Informacion</a>
+		</section>
 		<br>
 		<br>
-	</main>
 
-	<footer class="row">
-		<div class="column left">
-			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
-				<img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook">
-			</a>
-			<a href="https://twitter.com/MPulgarcito">
-				<img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter">
-			</a>
-			<a href="https://plus.google.com/u/0/113552977623674997858">
-				<img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus">
-			</a>
-		</div>
-		<div class="column middle">
-			<p>Universidad de El Salvador</p>
-			<p>Facultad de Ingenieria y Arquitectura</p>
-			<p>Escuela de Ingenieria de Sistemas</p>
-			<p>Tecnicas de Programacion para Internet</p>
-			<p>Grupo 05</p>
-		</div>
-		<div class="column right">
-			<img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
-		</div>
-	</footer>
-	<script>
-		var slideIndex = 0;
-		showSlides();
+		</main>
+		<!-- Trigger/Open The Modal -->
 
-		function showSlides() {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";
+		<!-- The Modal //comentario
+	<div id="myModal" class="modal">
+
+		< Modal content//comentari
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<p id="xml"></p>
+		</div>
+
+	</div>  -->
+
+		<footer class="row">
+			<div class="column left">
+				<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
+					<img src="images/facebook.png" style="height: 40%" align="top" alt="Facebook">
+				</a>
+				<a href="https://twitter.com/MPulgarcito">
+					<img src="images/twitter.png" style="height: 40%" align="top" alt="Twitter">
+				</a>
+				<a href="https://plus.google.com/u/0/113552977623674997858">
+					<img src="images/google-plus.png" style="height: 40%" align="top" alt="Google Plus">
+				</a>
+			</div>
+			<div class="column middle">
+				<p>Universidad de El Salvador</p>
+				<p>Facultad de Ingenieria y Arquitectura</p>
+				<p>Escuela de Ingenieria de Sistemas</p>
+				<p>Tecnicas de Programacion para Internet</p>
+				<p>Grupo 05</p>
+			</div>
+			<div class="column right">
+				<img src="images/logo_ues.png" style="height: 100%" alt="Logo UES">
+			</div>
+		</footer>
+		<script>
+			var slideIndex = 0;
+			showSlides();
+
+			function showSlides() {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				slideIndex++;
+				if (slideIndex > slides.length) { slideIndex = 1 }
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex - 1].style.display = "block";
+				dots[slideIndex - 1].className += " active";
+				setTimeout(showSlides, 5000); // Change image every 5 seconds
 			}
-			slideIndex++;
-			if (slideIndex > slides.length) { slideIndex = 1 }
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex - 1].style.display = "block";
-			dots[slideIndex - 1].className += " active";
-			setTimeout(showSlides, 5000); // Change image every 5 seconds
+		</script>
+		<!--script>
+		// Get the modal
+		var modal = document.getElementById('myModal');
+
+		// Get the button that opens the modal
+		var btn = document.getElementById("myBtn");
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+
+		// When the user clicks the button, open the modal 
+		btn.onclick = function () {
+			modal.style.display = "block";
+			$(document).ready(function () {
+			$.get('informacion.xml', function (d) {
+				$('#xml').append('<h1> Recommended Web Development Books </h1>');
+				$('#xml').append('<dl />');
+
+				$(d).find('tema').each(function () {
+
+					var $tema = $(this);
+					var titulo = $tema.attr("titulo");
+					var descripcion = $tema.find('descripcion').text();
+					var imageurl = $tema.attr('imageurl');
+
+					var html = '<dt> <img class="bookImage" alt="" src="' + imageurl + '" /> </dt>';
+					html += '<dd> <span class="loadingPic" alt="Loading" />';
+					html += '<p class="titulo">' + titulo + '</p>';
+					html += '<p> ' + descripcion + '</p>';
+					html += '</dd>';
+
+					$('dl').append($(html));
+
+					$('.loadingPic').fadeOut(1400);
+				});
+			});
+		});
 		}
-	</script>
+
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function () {
+			modal.style.display = "none";
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function (event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script-->
+
 </body>
 
 </html>
