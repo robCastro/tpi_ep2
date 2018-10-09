@@ -103,6 +103,12 @@ table{
   background: #ccc;
 }
 
+.titulo h1{
+  text-align: center; 
+  color: white;
+  font-size: 40px;
+}
+
 .mySlides {display: none;}
 img {vertical-align: middle;}
 

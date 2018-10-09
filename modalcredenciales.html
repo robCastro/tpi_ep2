@@ -1,7 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="UTF-8"> 
+	<!-- Etiqueta global de sitio (gtag.js) de Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127145400-1"></script>
+	<script type="text/javascript" src="js/google_analitics.js"></script>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<title>Mi pulgarcito | Modal credenciales</title>
 
@@ -10,71 +16,75 @@
 	<link rel="icon" type="image/x-icon" href="favicon.ico">
 
 	<script type="text/javascript">
-		function cambiarContrasena(){
+		function cambiarContrasena() {
 			window.location.href = 'credenciales.html';
 		}
 	</script>
 
 </head>
+
 <body>
-	<div class="header">
+	<header class="header">
 		<a href="index.html" style="background-color: transparent;">
 			<img src="images/escudo.png">
 			<img src="images/logo_mp.png">
 		</a>
-	</div>
+	</header>
 	<nav class="topnav">
-	    <a href="moderadores.html">Moderadores</a>
+		<a href="moderadores.html">Moderadores</a>
 		<a class="active" href="credenciales.html">Credenciales</a>
-		<a href="#contact">Aprobaciones</a>
+		<a href="aprobacionfotos.html">Aprobaciones</a>
 	</nav>
 	<br>
 	<br>
-	<div id="divcontra" class="row" >
+	<div id="divcontra" class="row">
 		<center>
 			<br>
-	  	<form >
-	  		<p><h3> Cambiar contrasena</h3></p>
-			<p>
-				<input type="text" id="txtUser" placeholder="Usuario"> 
-			</p>
-			<p><input type="password" id="txtPass" placeholder="Contraseña">
-			</p>
-			<p>
-				<input type="password" id="txtPass" placeholder="Confirmar Contraseña">
-			</p>
-			<p>
-			<button id="boton_cam" type="button" onclick="cambiarContrasena()">Cambiar contraseña</button>
-			</p>
-	    </form>
-		    </center>
+			<form>
+				<p>
+					<h3> Cambiar contrasena</h3>
+				</p>
+				<p>
+					<input type="text" id="txtUser" placeholder="Usuario">
+				</p>
+				<p>
+					<input type="password" id="txtPass" placeholder="Contraseña">
+				</p>
+				<p>
+					<input type="password" id="txtPass" placeholder="Confirmar Contraseña">
+				</p>
+				<p>
+					<button id="boton_cam" type="button" onclick="cambiarContrasena()">Cambiar contraseña</button>
+				</p>
+			</form>
+		</center>
 	</div>
 
-
-
-
-
-
-
-
-		<div style="position: absolute; width: 100%; top: 90%" id="pie" class="row">
+	<footer style="position: absolute; width: 100%; top: 90%" id="pie" class="row">
 
 		<div class="column left">
-  			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/"><img src="images/facebook.png" style="height: 40%" align="top"></a>
-		    <a href="https://twitter.com/MPulgarcito"><img src="images/twitter.png" style="height: 40%" align="top"></a>
-		    <a href=""><img src="images/google-plus.png" style="height: 40%" align="top"></a>
+			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
+				<img src="images/facebook.png" style="height: 40%" align="top">
+			</a>
+			<a href="https://twitter.com/MPulgarcito">
+				<img src="images/twitter.png" style="height: 40%" align="top">
+			</a>
+			<a href="">
+				<img src="images/google-plus.png" style="height: 40%" align="top">
+			</a>
 		</div>
 
 		<div class="column middle">
-		    <p>Universidad de El Salvador</p>
+			<p>Universidad de El Salvador</p>
 			<p>Facultad de Ingenieria y Arquitectura</p>
 			<p>Escuela de Ingenieria de Sistemas</p>
 			<p>Tecnicas de Programacion para Internet</p>
 			<p>Grupo 05</p>
-  		</div>
-  		<div class="column right">
-		    <img src="images/logo_ues.png" style="height: 100%">
-  		</div>
-	</div>
+		</div>
+		<div class="column right">
+			<img src="images/logo_ues.png" style="height: 100%">
+		</div>
+	</footer>
 </body>
+
 </html>
