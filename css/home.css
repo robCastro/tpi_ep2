@@ -1,8 +1,13 @@
 * {box-sizing: border-box;}
+html {
+  min-height: 100%;
+  position: relative;
+}
 
 body{
 	background-image: url("images/background.png");
-	margin: 0;
+  margin: 0;
+  margin-bottom: 200px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -187,9 +192,16 @@ img {vertical-align: middle;}
   text-align: center;
 }
 
+.right img{
+  width: 40%;
+}
+
+.left img{
+  width: 20%;
+}
+
 .left{
   display: table-cell;
-  vertical-align: middle;
   padding-top: 50px;
 }
 
@@ -197,6 +209,7 @@ img {vertical-align: middle;}
   width: 40%;
   text-align: center;
 }
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -210,7 +223,7 @@ img {vertical-align: middle;}
 }
 
 footer {
-    position: relative;
+    position: absolute;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -219,7 +232,7 @@ footer {
 
 .wrapper{
 	margin: auto;
- 	max-width:50%; 
+  max-width:50%; 
 }
 
 .wrapper label{
@@ -273,6 +286,31 @@ footer {
   text-justify: inter-word;
 }
 
+.qsomos{
+  width: 100%;
+  display: table;
+}
+
+.qsomos div{
+  display: table-cell;
+  padding: 5%;
+
+}
+
+.izquierda{
+  width: 45%;
+}
+
+.derecha{
+  float: right;
+}
+
+.qsomos div video{
+  margin-bottom: 10%;
+  padding-top: 0%;
+  width: 100%;
+}
+
 @-webkit-keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
@@ -284,29 +322,104 @@ footer {
 }
 
 /* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .topnav .container {
     float: none;
+    display: inline;
   }
   .topnav a, .topnav input[type=text], .topnav input[type=password], .topnav .container button {
-    float: none;
-    display: block;
-    text-align: left;
-    width: 100%;
+    display: inline;
+    text-align: center;
     margin: 0;
-    padding: 14px;
+    padding: 10px;
   }
   .topnav input[type=text], .topnav input[type=password] {
     border: 1px solid #ccc;  
   }
+  .header .escudo{
+    height: 80%;
+  }
+  .header .logo{
+    width: 80%;
+  }
+  .topnav a {
+    padding: 12px 14px;
+    display: inline;
+    font-size: 10px;
+    }
+
+    .column {
+      width: 100%;
+      padding-top: 30px; 
+    }
+
+    .topnav input[type=text], .topnav input[type=password] {
+      padding: 6px;
+      margin-top: 8px;
+      margin-right: 2px;
+      font-size: 10px;
+      width: 15%;
+    }
+    
+    .topnav .container button {
+      padding: 6px;
+      margin-top: 8px;
+      font-size: 10px;
+      width: 15%;
+    }
+
+    .left, .right {
+      width: 25%;
+    }
+    
+    .left{
+      padding-top: 50px;
+    }
+  
+    .right img{
+      width: 85%;
+    }
+
+    .left img{
+      width: 40%;
+    }
+  
+    .middle {
+      width: 50%;
+      font-size: 12px;
+    }
+  
+  /* Caption text */
+  .text {
+    font-size: 50px;
+  }
+  .contenido{
+    font-size: 15px;
+  }
+
+  .qsomos div{
+    display: block;
+    padding: 5%;
+  
+  }
+  
+  .izquierda{
+    width: 100%;
+  }
+  
+  .derecha{
+    float: none;
+  }
+  
+  .qsomos div video{
+    margin-bottom: 10%;
+    width: 100%;
+  }
+
+  .wrapper{
+    max-width:60%; 
+    margin-top: 5%;
+  }
+
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}

@@ -6,12 +6,19 @@ div.gallery {
 }
 
 div.gallery img {
-    width: auto;
-    height: auto;
+    width: 60%;
 }
 
 div.desc {
     padding: 15px;
     text-align: center;
     font-size: 180%;
+}
+
+@media screen and (max-width: 800px) {
+    div.gallery img {
+        width: 100%;
+        height: auto;
+    }
+
 }
