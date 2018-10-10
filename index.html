@@ -25,7 +25,6 @@
 
 	<link rel="stylesheet" title="default-blue" type="text/css" href="css/home.css">
 	<link rel="alternate stylesheet" title="alternative-green" type="text/css" href="css/alternative.css">
-	<link rel="stylesheet" type="text/css" href="css/modal.css">
 	<link rel="icon" type="image/x-icon" href="https://rinconcito-del-pulgarcito.000webhostapp.com/favicon.ico">
 
 	<!--Protocolo opengraph-->
@@ -47,9 +46,9 @@
 	<meta name="twitter:site" content="MiPulgarcito">
 
 	<!-- Schema.org markup for Google+ -->
-    <meta itemprop="name" content="Mi Pulgarcito | Conociendo El Salvador">
-    <meta itemprop="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turísticos, gastronomía, pueblos vivos, tradiciones de nuestro pequeño país El Salvador">
-    <meta itemprop="image" content="https://rinconcito-del-pulgarcito.000webhostapp.com/images/b3.jpg">
+	<meta itemprop="name" content="Mi Pulgarcito | Conociendo El Salvador">
+	<meta itemprop="description" content="Rinconcito del Pulgarcito es el sitio web donde puedes encontrar todo lo relacionado a sitios turísticos, gastronomía, pueblos vivos, tradiciones de nuestro pequeño país El Salvador">
+	<meta itemprop="image" content="https://rinconcito-del-pulgarcito.000webhostapp.com/images/b3.jpg">
 
 	<script type="text/javascript" src="js/iniciar_sesion.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -74,9 +73,11 @@
 			</form>
 		</div>
 	</nav>
-	<main class="titulo">
+	<main>
 		<br>
-		<h1>Rinconcito del Pulgarcito</h1>
+		<section class="titulo">
+			<h1>Rinconcito del Pulgarcito</h1>
+		</section>
 		<br>
 		<section class="slideshow-container">
 			<div class="mySlides fade">
@@ -125,10 +126,10 @@
 		<br>
 		<br>
 
-		</main>
-		<!-- Trigger/Open The Modal -->
+	</main>
+	<!-- Trigger/Open The Modal -->
 
-		<!-- The Modal //comentario
+	<!-- The Modal //comentario
 	<div id="myModal" class="modal">
 
 		< Modal content//comentari
@@ -139,51 +140,51 @@
 
 	</div>  -->
 
-		<footer class="row">
-			<div class="column left">
-				<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
-					<img src="images/facebook.png" align="top" alt="Facebook">
-				</a>
-				<a href="https://twitter.com/MPulgarcito">
-					<img src="images/twitter.png" align="top" alt="Twitter">
-				</a>
-				<a href="https://plus.google.com/u/0/113552977623674997858">
-					<img src="images/google-plus.png" align="top" alt="Google Plus">
-				</a>
-			</div>
-			<div class="column middle">
-				<p>Universidad de El Salvador</p>
-				<p>Facultad de Ingenieria y Arquitectura</p>
-				<p>Escuela de Ingenieria de Sistemas</p>
-				<p>Tecnicas de Programacion para Internet</p>
-				<p>Grupo 05</p>
-			</div>
-			<div class="column right">
-				<img src="images/logo_ues.png" alt="Logo UES">
-			</div>
-		</footer>
-		<script>
-			var slideIndex = 0;
-			showSlides();
+	<footer class="row">
+		<div class="column left">
+			<a href="https://www.facebook.com/Mi-Pulgarcito-2226022097669641/">
+				<img src="images/facebook.png" align="top" alt="Facebook">
+			</a>
+			<a href="https://twitter.com/MPulgarcito">
+				<img src="images/twitter.png" align="top" alt="Twitter">
+			</a>
+			<a href="https://plus.google.com/u/0/113552977623674997858">
+				<img src="images/google-plus.png" align="top" alt="Google Plus">
+			</a>
+		</div>
+		<div class="column middle">
+			<p>Universidad de El Salvador</p>
+			<p>Facultad de Ingenieria y Arquitectura</p>
+			<p>Escuela de Ingenieria de Sistemas</p>
+			<p>Tecnicas de Programacion para Internet</p>
+			<p>Grupo 05</p>
+		</div>
+		<div class="column right">
+			<img src="images/logo_ues.png" alt="Logo UES">
+		</div>
+	</footer>
+	<script>
+		var slideIndex = 0;
+		showSlides();
 
-			function showSlides() {
-				var i;
-				var slides = document.getElementsByClassName("mySlides");
-				var dots = document.getElementsByClassName("dot");
-				for (i = 0; i < slides.length; i++) {
-					slides[i].style.display = "none";
-				}
-				slideIndex++;
-				if (slideIndex > slides.length) { slideIndex = 1 }
-				for (i = 0; i < dots.length; i++) {
-					dots[i].className = dots[i].className.replace(" active", "");
-				}
-				slides[slideIndex - 1].style.display = "block";
-				dots[slideIndex - 1].className += " active";
-				setTimeout(showSlides, 5000); // Change image every 5 seconds
+		function showSlides() {
+			var i;
+			var slides = document.getElementsByClassName("mySlides");
+			var dots = document.getElementsByClassName("dot");
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
 			}
-		</script>
-		<!--script>
+			slideIndex++;
+			if (slideIndex > slides.length) { slideIndex = 1 }
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+			slides[slideIndex - 1].style.display = "block";
+			dots[slideIndex - 1].className += " active";
+			setTimeout(showSlides, 5000); // Change image every 5 seconds
+		}
+	</script>
+	<!--script>
 		// Get the modal
 		var modal = document.getElementById('myModal');
 
