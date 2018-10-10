@@ -9,9 +9,9 @@ body{
 td, th{
     border: 2px solid black;
     }
-table{
+table, form{
       border-collapse: collapse;
-      margin:50px auto;
+      margin:27px;
       font-family: Arial;
     }
 #pie{
@@ -23,8 +23,8 @@ table{
 }
 #divcontra{
      background-color: #FDFEFE;
-     width: 400px;
-     height: 300px;
+     width: 350px;
+     height: 263px;
      margin-left: auto;
      margin-right: auto;
      margin-top: auto;
@@ -205,6 +205,8 @@ img {vertical-align: middle;}
     clear: both;
     background-color: black;
     color: #aeafaf;
+    position: fixed;
+    bottom: 0;
 }
 
 footer {
